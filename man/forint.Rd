@@ -18,4 +18,5 @@ Formats numbers as Hungarian Forints
 \examples{
 forint(42)
 forint(10000.42365)
+forint(1:10)
 }
