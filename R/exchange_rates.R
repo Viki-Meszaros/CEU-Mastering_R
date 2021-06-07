@@ -22,7 +22,7 @@ get_usdhuf <- function(retried = 0){
 }
 
 
-#' Returns the current exchange rate from USD to HUF
+#' Returns the exchange rates from USD to HUF in the past 30 days
 #' @param start_date date
 #' @param end_date date
 #' @inheritParams get_usdhuf
@@ -63,7 +63,7 @@ tryCatch({
 
 
 
-#' Returns the current exchange rate between any currencies
+#' Returns the current exchange rate between any two currencies between two chosen time periods
 #' @param base_currency string
 #' @param symbol_currency string
 #' @param start_date date
