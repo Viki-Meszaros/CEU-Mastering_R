@@ -2,21 +2,20 @@
 % Please edit documentation in R/forint.R
 \name{forint}
 \alias{forint}
-\title{Formats numbers as Hungarian Forints}
+\title{Formats numbers as Hungarian Forints (HUF)}
 \usage{
 forint(x)
 }
 \arguments{
-\item{x}{numeric}
+\item{x}{number}
 }
 \value{
 string
 }
 \description{
-Formats numbers as Hungarian Forints
+Formats numbers as Hungarian Forints (HUF)
 }
 \examples{
 forint(42)
 forint(10000.423)
-forint(1:10)
 }
