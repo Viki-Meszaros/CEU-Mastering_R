@@ -1,9 +1,10 @@
 #' Formats numbers as Hungarian Forints
 #' @param x numeric
 #' @return string
-#' @export
 #' @import checkmate
+#' @importFrom checkmate assert_numeric
 #' @importFrom scales dollar
+#' @export
 #' @examples
 #' forint(42)
 #' forint(10000.423)
