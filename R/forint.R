@@ -10,5 +10,5 @@
 #' forint(1:10)
 forint <- function(x){
   assert_numeric(x)
-  dollar(x, prefix = "", suffix = " Ft")
+  dollar(x, prefix = "", suffix = " HUF")
 }
