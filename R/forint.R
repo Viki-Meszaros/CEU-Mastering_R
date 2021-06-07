@@ -7,7 +7,6 @@
 #' @examples
 #' forint(42)
 #' forint(10000.42365)
-#' forint(1:10)
 forint <- function(x){
   assert_number(x)
   dollar(x, prefix = "", suffix = " HUF")
