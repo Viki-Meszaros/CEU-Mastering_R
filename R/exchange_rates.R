@@ -72,6 +72,7 @@ tryCatch({
 #' @return \code{data.table} object
 #' @export
 #' @importFrom logger log_info log_error
+#' @importFrom checkmate assert_numeric
 #' @importFrom data.table data.table
 #' @importFrom httr GET content
 get_exchange_rates <- function(base_currency, symbol_currency, start_date = Sys.Date() -30, end_date = Sys.Date(), retried = 0) {
