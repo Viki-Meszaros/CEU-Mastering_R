@@ -2,7 +2,7 @@
 #' @param x number
 #' @return string
 #' @export
-#' @importFrom checkmate assert_number
+#' @importFrom checkmate assert_numeric
 #' @importFrom scales dollar
 #' @examples
 #' forint(42)
