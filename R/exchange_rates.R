@@ -28,7 +28,7 @@ get_usdhuf <- function(retried = 0){
 #' @inheritParams get_usdhuf
 #' @return \code{data.table} object
 #' @export
-#' @importFrom checkmate assert_number
+#' @importFrom checkmate assert_numeric
 #' @importFrom jsonlite fromJSON
 #' @importFrom logger log_info log_error
 #' @importFrom data.table data.table
@@ -64,10 +64,10 @@ tryCatch({
 
 
 #' Returns the current exchange rate between any currencies
-#' @param start_date date
-#' @param end_date date
 #' @param base_currency string
 #' @param symbol_currency string
+#' @param start_date date
+#' @param end_date date
 #' @inheritParams get_usdhuf
 #' @return \code{data.table} object
 #' @export
