@@ -2,7 +2,7 @@
 % Please edit documentation in R/exchange_rates.R
 \name{get_usdhufs}
 \alias{get_usdhufs}
-\title{Returns the current exchange rate from USD to HUF}
+\title{Returns the exchange rates from USD to HUF in the past 30 days}
 \usage{
 get_usdhufs(start_date = Sys.Date() - 30, end_date = Sys.Date(), retried = 0)
 }
@@ -17,5 +17,5 @@ get_usdhufs(start_date = Sys.Date() - 30, end_date = Sys.Date(), retried = 0)
 \code{data.table} object
 }
 \description{
-Returns the current exchange rate from USD to HUF
+Returns the exchange rates from USD to HUF in the past 30 days
 }

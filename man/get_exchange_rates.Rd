@@ -2,17 +2,21 @@
 % Please edit documentation in R/exchange_rates.R
 \name{get_exchange_rates}
 \alias{get_exchange_rates}
-\title{Returns the current exchange rate between any currencies}
+\title{Returns the current exchange rate between any two currencies between two chosen time periods}
 \usage{
 get_exchange_rates(
   base_currency,
   symbol_currency,
-  start_date,
-  end_date,
+  start_date = Sys.Date() - 30,
+  end_date = Sys.Date(),
   retried = 0
 )
 }
 \arguments{
+\item{base_currency}{string}
+
+\item{symbol_currency}{string}
+
 \item{start_date}{date}
 
 \item{end_date}{date}
@@ -23,5 +27,5 @@ get_exchange_rates(
 \code{data.table} object
 }
 \description{
-Returns the current exchange rate between any currencies
+Returns the current exchange rate between any two currencies between two chosen time periods
 }
