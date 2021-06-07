@@ -1,13 +1,14 @@
 #' Formats numbers as Hungarian Forints
-#' @param x number
+#' @param x numeric
 #' @return string
 #' @export
-#' @importFrom checkmate assert_number
+#' @importFrom checkmate assert_numeric
 #' @importFrom scales dollar
 #' @examples
 #' forint(42)
 #' forint(10000.423)
+#' forint(1:10)
 forint <- function(x){
-  assert_number(x)
+  assert_numeric(x)
   dollar(x, prefix = "", suffix = " HUF")
 }
